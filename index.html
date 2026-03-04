@@ -1,0 +1,131 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>我的个人主页</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root { --accent: #4e73df; --dark: #2d3748; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: var(--dark); }
+    .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+    header { text-align: center; margin-bottom: 2rem; }
+    .avatar { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid var(--accent); margin: 0 auto 1rem; }
+    h1 { color: var(--accent); font-size: 2.5rem; }
+    .tagline { color: #6c757d; font-style: italic; }
+    .section { margin-bottom: 2.5rem; }
+    h2 { border-left: 4px solid var(--accent); padding-left: 0.5rem; margin-bottom: 1rem; }
+    .skills { display: flex; flex-wrap: wrap; gap: 0.8rem; }
+    .skill { background: #e9ecef; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 500; }
+    .project { background: white; border-radius: 10px; padding: 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 1.5rem; }
+    .project h3 { color: var(--accent); }
+    footer { text-align: center; margin-top: 3rem; color: #6c757d; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="https://via.placeholder.com/150/4e73df/ffffff?text=Me" alt="Avatar" class="avatar">
+      <h1>Sailingluiz 刘启航</h1>
+      <p class="tagline">Web Developer | Designer | Open Source Enthusiast</p>
+    </header>
+
+    <section class="section">
+      <h2>技能</h2>
+      <div class="skills">
+        <span class="skill">HTML/CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">Git</span>
+        <span class="skill">React</span>
+        <span class="skill">Node.js</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>我的项目</h2>
+    <div class="projects-container">
+    <!-- 模拟银行系统项目 -->
+    <div class="project-card">
+      <div class="project-header">
+        <h3>智能银行管理系统</h3>
+        <span class="tech-stack">SSM + Vue + Spring Boot</span>
+      </div>
+      <div class="project-content">
+        <p class="project-description">构建了高可用、高安全性的银行核心业务系统，采用分层架构设计实现业务逻辑与数据访问解耦，通过Spring事务管理确保交易原子性，BCrypt密码加密保障数据安全。</p>
+        
+        <div class="project-achievements">
+          <div class="achievement">
+            <span class="achievement-value">✅ 100%核心功能覆盖</span>
+            <span class="achievement-desc">用户账户管理、资金转账、贷款申请、交易流水查询等全流程支持</span>
+          </div>
+          <div class="achievement">
+            <span class="achievement-value">✅ 事务一致性保障</span>
+            <span class="achievement-desc">通过Spring声明式事务管理实现转账操作原子性，异常自动回滚，数据一致性达100%</span>
+          </div>
+          <div class="achievement">
+            <span class="achievement-value">✅ 安全架构设计</span>
+            <span class="achievement-desc">集成BCrypt密码加密、MyBatis预编译防SQL注入、AOP日志记录，构建多层次安全防护体系</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 华为商城项目 -->
+    <div class="project-card">
+      <div class="project-header">
+        <h3>华为商城电商平台</h3>
+        <span class="tech-stack">Vue + HTML5 + CSS3</span>
+      </div>
+      <div class="project-content">
+        <p class="project-description">打造了高度仿真的华为商城原型系统，采用模块化设计实现关键功能，通过响应式布局确保多终端兼容性，优化用户体验与交互流畅度。</p>
+        
+        <div class="project-achievements">
+          <div class="achievement">
+            <span class="achievement-value">✅ 高效页面渲染</span>
+            <span class="achievement-desc">实现页面加载时间减少40%，通过组件化设计提升代码复用率与维护性</span>
+          </div>
+          <div class="achievement">
+            <span class="achievement-value">✅ 交互体验优化</span>
+            <span class="achievement-desc">设计流畅的导航交互、商品展示与购物车功能，提升用户停留时长与转化率</span>
+          </div>
+          <div class="achievement">
+            <span class="achievement-value">✅ 响应式架构</span>
+            <span class="achievement-desc">采用Bootstrap 5响应式布局，适配手机、平板与桌面端，确保跨设备一致体验</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 花销透镜项目 -->
+    <div class="project-card">
+      <div class="project-header">
+        <h3>智能消费分析平台</h3>
+        <span class="tech-stack">Spring Boot + Thymeleaf + Chart.js</span>
+      </div>
+      <div class="project-content">
+        <p class="project-description">将传统桌面应用升级为现代化Web应用，通过数据可视化技术实现消费行为智能分析，构建高信息密度的决策支持界面，显著提升用户体验与数据分析效率。</p>
+        
+        <div class="project-achievements">
+          <div class="achievement">
+            <span class="achievement-value">✅ 智能可视化设计</span>
+            <span class="achievement-desc">集成Chart.js实现多维度数据展示，包括支出类别饼图、7日趋势柱状图与智能趋势分析文案</span>
+          </div>
+          <div class="achievement">
+            <span class="achievement-value">✅ 高效数据处理</span>
+            <span class="achievement-desc">采用Spring Boot轻量级架构，实现消费记录增删改查与多维分析，响应时间优化65%</span>
+          </div>
+          <div class="achievement">
+            <span class="achievement-value">✅ 专业级用户体验</span>
+            <span class="achievement-desc">设计"信息密度极高"的首页，整合关键数据指标与可视化图表，打造商业级分析体验</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </section>
+
+    <footer>
+      <p>© 2023 | <a href="https://github.com/yourname" style="color: var(--accent); text-decoration: none;">GitHub</a> | <a href="mailto:yourname@example.com" style="color: var(--accent); text-decoration: none;">Email</a></p>
+    </footer>
+  </div>
+</body>
+</html>
